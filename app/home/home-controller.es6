@@ -2,10 +2,16 @@
   'use strict';
 
   class HomeCtrl {
-    constructor($scope) {
+    constructor($scope, $geolocation) {
       'ngInject';
       const vm = this;
       vm.$scope = $scope;
+      vm.$geolocation = $geolocation;
+      vm.$geolocation.getCurrentPosition({
+        timeout: 60000
+      }).then(position => {
+        vm.$scope.myPosition = position;
+      });
     }
   }
 

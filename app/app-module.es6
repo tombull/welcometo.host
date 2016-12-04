@@ -12,6 +12,7 @@
       'ngMessages',
       'ui.router',
       'ngAnimate',
-      'home'
+      'home',
+      'ngGeolocation'
     ]);
 }());
