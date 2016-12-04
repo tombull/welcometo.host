@@ -7,10 +7,11 @@
       const vm = this;
       vm.$scope = $scope;
       vm.$geolocation = $geolocation;
+      vm.myPosition = 'Something';
       vm.$geolocation.getCurrentPosition({
         timeout: 60000
       }).then(position => {
-        vm.$scope.myPosition = position;
+        vm.myPosition = position;
       });
     }
   }
