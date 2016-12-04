@@ -11,7 +11,7 @@
       vm.$geolocation.getCurrentPosition({
         timeout: 60000
       }).then(position => {
-        vm.myPosition = position;
+        vm.myPosition = 'Position: Lat: ' + position.coords.latitude + ' Long: ' + position.coords.longitude;
       });
     }
   }
