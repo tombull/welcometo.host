@@ -13,6 +13,7 @@
       'ui.router',
       'ngAnimate',
       'home',
-      'ngGeolocation'
+      'ngGeolocation',
+      'pubnub.angular.service'
     ]);
 }());
